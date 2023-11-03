@@ -7,6 +7,24 @@ import bgButtomMobile from '@/public/images/bg-pattern-bottom-mobile.svg'
 import bgButtomDesktop from '@/public/images/bg-pattern-bottom-desktop.svg'
 
 export default function Home() {
+
+  const reviews = [{
+    rating: 5,
+    reviewCategory: 'Reviews',
+    className: 'sm:mr-36'
+  },
+  {
+    rating: 3,
+    reviewCategory: 'Report Guru',
+    className: 'sm:mr-24 sm:ml-12'
+  },
+  {
+    rating: 4,
+    reviewCategory: 'BestTech',
+    className: 'sm:mr-12 sm:ml-24'
+  }
+  ]
+
   return (
     <div className="text-xl font-League_Spartan flex flex-col sm:justify-center items-center p-5 py-20  gap-8 sm:p-20 relative">
 
@@ -32,3 +50,4 @@ export default function Home() {
     </div>
   )
 }
+1
