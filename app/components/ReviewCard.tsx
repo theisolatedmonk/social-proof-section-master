@@ -10,19 +10,22 @@ const profileData = [
         name: 'Colton Smith',
         src: colton,
         buyerType: 'Verified  Buyer',
-        comment: '"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"'
+        comment: '"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"',
+        className: 'sm:mt-2'
     },
     {
         name: 'Irene Roberts',
         src: irene,
         buyerType: 'Verified  Buyer',
-        comment: '"Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."'
+        comment: '"Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."',
+        className: 'sm:mt-8'
     },
     {
         name: 'Anne Wallace ',
         src: anne,
         buyerType: 'Verified  Buyer',
-        comment: '"Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"'
+        comment: '"Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"',
+        className: 'sm:mt-12'
     }
 
 ]
@@ -30,9 +33,9 @@ const profileData = [
 
 export default function ReviewCard() {
     return (
-        <>
+        <div className='flex flex-col  gap-4 sm:flex-row    sm:h-[400px]  sm:justify-between '>
             {profileData.map((item) => (
-                <div className='flex flex-col bg-VeryDarkMagenta p-8 text-White rounded-md'>
+                <div className={`flex flex-col bg-VeryDarkMagenta p-8 text-White rounded-md sm:h-[240px] text-sm  ${item.className}`}>
 
                     <div className="flex items-center gap-8  
                     ">
@@ -47,6 +50,6 @@ export default function ReviewCard() {
                 </div>
             ))}
 
-        </>
+        </div>
     )
 }
