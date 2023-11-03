@@ -12,12 +12,12 @@ export default function Home() {
 
       <Image src={bgTopMobile} alt={''} width={100} height={100} className='absolute top-0 left-0 z-20  w-full sm:hidden' />
       <Image src={bgButtomMobile} alt={''} width={100} height={100} className='absolute bottom-0 left-0 z-20  w-full sm:hidden ' />
-      <Image src={bgTopDesktop} alt={''} width={100} height={100} className='absolute top-0 left-0 z-20  w-full sm:flex hidden' />
-      <Image src={bgButtomDesktop} alt={''} width={100} height={100} className='absolute bottom-0 right-0 z-20  w-full sm:flex hidden ' />
+      <Image src={bgTopDesktop} alt={''} width={100} height={100} className='absolute top-0 left-0 z-20  w-[35%] h-[40%]  sm:flex hidden' />
+      <Image src={bgButtomDesktop} alt={''} width={100} height={100} className='absolute bottom-0 right-0 z-20  w-[90%] sm:flex hidden h-[80%] ' />
       <div className="flex flex-col sm:flex-row sm:justify-between gap-8 w-full sm:items-center " >
-        <div className="flex flex-col gap-8">
-          <div className="text-center text-4xl font-bold text-VeryDarkMagenta px-16 sm:pr-48 sm:px-0 p sm:text-start">10,000+ ofour users love our products.</div>
-          <p className="text-center text-DarkGrayishMagenta sm:text-start sm:pr-10 sm:px-0">We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services.</p>
+        <div className="flex flex-col gap-8 mt-10">
+          <div className="text-center text-4xl font-bold text-VeryDarkMagenta px-16 sm:pr-32 sm:px-0 p sm:text-start">10,000+ of our users love our products.</div>
+          <p className="text-center text-DarkGrayishMagenta sm:text-start sm:pr-3 text-lg sm:px-0">We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services.</p>
 
         </div>
         <div className="flex flex-col gap-4 w-full mr-28">
